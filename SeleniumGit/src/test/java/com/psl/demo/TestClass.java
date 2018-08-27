@@ -14,7 +14,7 @@ public class TestClass {
 	public void beforeTest() {
 		driver.manage().window().maximize();
 
-		driver.get("https://www.guru99.com/");					//this is a guru website
+		driver.get("https://www.guru99.com/");					//this is a guru website 
 	}
 
 	@Test
@@ -26,7 +26,7 @@ public class TestClass {
 		aTitle = driver.getTitle();
 
 		if (aTitle.matches(eTitle)) {
-			System.out.println("Test Passed");
+			System.out.println("Test Passed sucessfully");
 		} else {
 			System.out.println("Test Failed");
 		}
