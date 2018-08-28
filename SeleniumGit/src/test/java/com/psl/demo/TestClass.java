@@ -15,7 +15,7 @@ public class TestClass {
 		driver.manage().window().maximize();
 
 		driver.get("https://www.guru99.com/");					//this is a guru website 
-	}										//test trial
+	}															//test trial
 
 	@Test
 	public void test() {
