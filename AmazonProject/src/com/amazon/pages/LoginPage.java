@@ -79,6 +79,19 @@ public class LoginPage {
 		signin.click();
 	}
 	
+	/**
+	 * use proper class names--------------done
+data provider
+pom (page object model)
+take input from file (such as url and email etc...)
+passwords and url should come from file (config file i guess)
+assertions
+use of good java practices like ( use for loop in window handling and not interator)
+interdependancy of test cases
+
+2)dont refresh the page instead use the wait method or something else
+	 */
+	
 	
 	
 	
