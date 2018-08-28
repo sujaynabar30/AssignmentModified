@@ -2,6 +2,7 @@ package com.amazon.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 
 /**
@@ -54,15 +55,19 @@ public class LoginPage {
 	WebElement email;
 	
 	@FindBy(id="ap_password")
+	@CacheLookup
 	WebElement password;
 	
 	@FindBy(id="signInSubmit")
+	@CacheLookup
 	WebElement signin;
 	
 	@FindBy(id="nav-link-yourAccount")
+	@CacheLookup
 	WebElement AmazonCart;
 	
 	@FindBy(id="continue")
+	@CacheLookup
 	WebElement ContinueButton;
 	
 	public void loginToAmazon(String emailid, String pass)
