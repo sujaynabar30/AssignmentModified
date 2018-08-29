@@ -5,9 +5,11 @@
     <classes>
       <class name="com.amazon.testcases.AmazonMain">
         <methods>
+          <include name="login"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="testMethod"/>
+          <include name="productDelete"/>
+          <include name="proudctPage" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.amazon.testcases.AmazonMain -->
     </classes>
