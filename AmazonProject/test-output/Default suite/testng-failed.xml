@@ -5,6 +5,7 @@
     <classes>
       <class name="com.amazon.testcases.AmazonMain">
         <methods>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="testMethod"/>
         </methods>

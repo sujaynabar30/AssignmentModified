@@ -1,60 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="175240" started-at="2018-08-29T10:41:03Z" finished-at="2018-08-29T10:43:58Z">
+  <suite name="Default suite" duration-ms="199656" started-at="2018-08-29T11:58:36Z" finished-at="2018-08-29T12:01:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="175240" started-at="2018-08-29T10:41:03Z" finished-at="2018-08-29T10:43:58Z">
+    <test name="Default test" duration-ms="199656" started-at="2018-08-29T11:58:36Z" finished-at="2018-08-29T12:01:56Z">
       <class name="com.amazon.testcases.AmazonMain">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amazon.testcases.AmazonMain@cc285f4]" name="beforeTest" is-config="true" duration-ms="68630" started-at="2018-08-29T10:41:03Z" finished-at="2018-08-29T10:42:11Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="beforeTest" is-config="true" duration-ms="85712" started-at="2018-08-29T11:58:36Z" finished-at="2018-08-29T12:00:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.amazon.testcases.AmazonMain@cc285f4]" name="login" duration-ms="35065" started-at="2018-08-29T10:42:11Z" finished-at="2018-08-29T10:42:46Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="login" duration-ms="26413" started-at="2018-08-29T12:00:02Z" finished-at="2018-08-29T12:00:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="testMethod(java.lang.String, org.openqa.selenium.WebDriver)[pri:0, instance:com.amazon.testcases.AmazonMain@cc285f4]" name="testMethod" duration-ms="5" started-at="2018-08-29T10:42:46Z" data-provider="SearchProvider" finished-at="2018-08-29T10:42:46Z">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-Data provider mismatch
-Method: testMethod([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=org.openqa.selenium.WebDriver, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) Think and Grow Rich (Re-Jacketed December 2017)]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: testMethod([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=org.openqa.selenium.WebDriver, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) Think and Grow Rich (Re-Jacketed December 2017)]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:982)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod -->
-        <test-method status="PASS" signature="proudctPage(java.lang.String)[pri:0, instance:com.amazon.testcases.AmazonMain@cc285f4]" name="proudctPage" duration-ms="35739" started-at="2018-08-29T10:42:46Z" data-provider="SearchProvider" depends-on-methods="com.amazon.testcases.AmazonMain.login" finished-at="2018-08-29T10:43:22Z">
+        <test-method status="PASS" signature="proudctPage(java.lang.String)[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="proudctPage" duration-ms="58307" started-at="2018-08-29T12:00:29Z" data-provider="SearchProvider" depends-on-methods="com.amazon.testcases.AmazonMain.login" finished-at="2018-08-29T12:01:27Z">
           <params>
             <param index="0">
               <value>
@@ -65,7 +26,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proudctPage -->
-        <test-method status="PASS" signature="proudctPage(java.lang.String)[pri:0, instance:com.amazon.testcases.AmazonMain@cc285f4]" name="proudctPage" duration-ms="23229" started-at="2018-08-29T10:43:22Z" data-provider="SearchProvider" depends-on-methods="com.amazon.testcases.AmazonMain.login" finished-at="2018-08-29T10:43:45Z">
+        <test-method status="PASS" signature="proudctPage(java.lang.String)[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="proudctPage" duration-ms="19253" started-at="2018-08-29T12:01:27Z" data-provider="SearchProvider" depends-on-methods="com.amazon.testcases.AmazonMain.login" finished-at="2018-08-29T12:01:46Z">
           <params>
             <param index="0">
               <value>
@@ -76,10 +37,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proudctPage -->
-        <test-method status="PASS" signature="productDelete()[pri:0, instance:com.amazon.testcases.AmazonMain@cc285f4]" name="productDelete" duration-ms="12539" started-at="2018-08-29T10:43:45Z" depends-on-methods="com.amazon.testcases.AmazonMain.proudctPage" finished-at="2018-08-29T10:43:58Z">
+        <test-method status="PASS" signature="productDelete()[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="productDelete" duration-ms="9134" started-at="2018-08-29T12:01:46Z" depends-on-methods="com.amazon.testcases.AmazonMain.proudctPage" finished-at="2018-08-29T12:01:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productDelete -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="afterTest" is-config="true" duration-ms="810" started-at="2018-08-29T12:01:55Z" finished-at="2018-08-29T12:01:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- com.amazon.testcases.AmazonMain -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
