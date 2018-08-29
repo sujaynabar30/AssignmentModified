@@ -14,7 +14,6 @@ public class ProductPage {
     
 	//WebDriver driver = BrowserFactory.startBrowser("chrome", "https://www.amazon.in/");
 	
-	@Test(dataProvider = "SearchProvider", dataProviderClass = DataproviderClass.class)
 	public void testMethod(String searchKey,WebDriver driver) {
 		
 			System.out.println("dataprovided key is :"+searchKey);

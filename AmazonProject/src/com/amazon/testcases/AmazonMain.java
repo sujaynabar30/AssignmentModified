@@ -39,7 +39,7 @@ public class AmazonMain extends ProductPage {
 		proddelcart.prodDelete(driver);
 	}
 	
-	@AfterTest(dependsOnMethods= {"productDelete"})
+	@AfterTest()
 	public void afterTest()
 	{
 		driver.quit();
