@@ -23,24 +23,32 @@ import PageFactory.BrowserFactory;
 
 public class VerifyAmazonLogin {
 	
+	 WebDriver driver;
+	 
 	
+	public VerifyAmazonLogin(WebDriver driver) {
+		super();
+		this.driver = driver;
+	}
+
+
 	public void verifyValidLogin()
 	{
 		/*WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 		driver.get("https://www.amazon.in/");
-		
+																								//page object model
 		LoginPage login = new LoginPage(driver);
 		
 		login.clickCart();
 		login.typeEmail();
-		driver.findElement(By.id("continue")).click();				//page object model
+		driver.findElement(By.id("continue")).click();				
 		login.typePassword();
 		login.clickLogin();*/
 		
 
-		WebDriver driver = BrowserFactory.startBrowser("firefox", "https://www.amazon.in/");   //this will launch the browser and specific url
+		//WebDriver driver = BrowserFactory.startBrowser("chrome", "https://www.amazon.in/");   //this will launch the browser and specific url
 		
 		LoginPage login_page = PageFactory.initElements(driver, LoginPage.class);        //created page object using page factory
 		
@@ -48,7 +56,9 @@ public class VerifyAmazonLogin {
 		
 		WebElement verify = driver.findElement(By.xpath("//*[@id=\"nav-link-yourAccount\"]/span[1]"));
 		String check = verify.getText();
-		System.out.println(check);
+		//System.out.println(check);
+		
+		Assert.assertEquals(driver.getTitle(), "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 		
 		if(check.equals("Hello, NABAR")) {
 			System.out.println("Logged in Sucessfully");

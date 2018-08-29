@@ -16,22 +16,24 @@ public class BrowserFactory {
 		if(BrowserName.equals("chrome"))
 		{
 			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
+			driver.manage().window().maximize();
 			driver.get(url);
 		}
 		else if(BrowserName.equals("firefox"))
 		{
 			driver = new FirefoxDriver();
-			driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
+			driver.manage().window().maximize();
 			driver.get(url);
 		}
 		else if(BrowserName.equals("IE"))
 		{
 			driver = new InternetExplorerDriver();
-			driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
+			driver.manage().window().maximize();
 			driver.get(url);
 		}
-		driver.manage().window().maximize();
 		
 		return driver;
 		
