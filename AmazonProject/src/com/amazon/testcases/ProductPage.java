@@ -25,7 +25,6 @@ public class ProductPage {
 
 			WindowHandleClass window = new WindowHandleClass();
 			window.windowHandle(driver);
-  
-	
+ 
 	}
 }
