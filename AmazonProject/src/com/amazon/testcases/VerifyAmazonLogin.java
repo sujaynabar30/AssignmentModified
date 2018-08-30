@@ -1,5 +1,10 @@
 package com.amazon.testcases;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -10,21 +15,19 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.amazon.browserinit.BrowserFactory;
 import com.amazon.pages.LoginPage;
-
-import PageFactory.BrowserFactory;
 
 /**
  * 
  * @author sujay_nabar
  * 
- * This is a Test case Class
+ * This is a class used for the logging-in of the user
  */
 
 public class VerifyAmazonLogin {
 	
-	 WebDriver driver;
-	 
+	 WebDriver driver; 
 	
 	public VerifyAmazonLogin(WebDriver driver) {
 		super();
@@ -50,9 +53,27 @@ public class VerifyAmazonLogin {
 
 		//WebDriver driver = BrowserFactory.startBrowser("chrome", "https://www.amazon.in/");   //this will launch the browser and specific url
 		
+		File file = new File("D:\\Git Repository\\AmazonProject\\Configs\\Configuation.properties");
+
+		FileInputStream fileInput = null;
+		try {
+			fileInput = new FileInputStream(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		Properties prop = new Properties();
+
+		// load properties file
+		try {
+			prop.load(fileInput);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 		LoginPage login_page = PageFactory.initElements(driver, LoginPage.class);        //created page object using page factory
 		
-		login_page.loginToAmazon("sujaynabar30@gmail.com", "mangirish");				//call the method
+		login_page.loginToAmazon(prop.getProperty("emailid"),prop.getProperty("password"));				//call the method
 		
 		WebElement verify = driver.findElement(By.xpath("//*[@id=\"nav-link-yourAccount\"]/span[1]"));
 		String check = verify.getText();

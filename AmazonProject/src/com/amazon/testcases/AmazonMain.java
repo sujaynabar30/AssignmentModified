@@ -5,7 +5,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import PageFactory.BrowserFactory;
+import com.amazon.browserinit.BrowserFactory;
+import com.amazon.mousehover.FilteringMouseHover;
+
+/**
+ * 
+ * @author sujay_nabar
+ * This is a test case Class where all test cases are executed from this class
+ */
 
 public class AmazonMain extends ProductPage {
 	
@@ -22,14 +29,12 @@ public class AmazonMain extends ProductPage {
 	{
 		VerifyAmazonLogin login = new VerifyAmazonLogin(driver);
 		login.verifyValidLogin();
-
 	}
 	
 	@Test(dependsOnMethods={"login"},dataProvider = "SearchProvider", dataProviderClass = DataproviderClass.class)
 	public void proudctPage(String key) throws InterruptedException {
 		//Thread.sleep(3000);
-		testMethod(key,driver);
-			
+		testMethod(key,driver);			
 	}
 	
 	@Test(dependsOnMethods= {"proudctPage"})
@@ -37,6 +42,13 @@ public class AmazonMain extends ProductPage {
 	{
 		ProductDeleteClass proddelcart = new ProductDeleteClass();
 		proddelcart.prodDelete(driver);
+	}
+	
+	@Test(dependsOnMethods= {"productDelete"})
+	public void mousehover()
+	{
+		FilteringMouseHover mouse = new FilteringMouseHover(driver);
+		mouse.filterMouseHover();		
 	}
 	
 	@AfterTest()

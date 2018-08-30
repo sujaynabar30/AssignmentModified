@@ -2,6 +2,11 @@ package com.amazon.testcases;
 
 import org.testng.annotations.DataProvider;
 
+/**
+ * 
+ * @author sujay_nabar
+ * This is a data provider class used for sending the data to the verifylogin class
+ */
 public class DataproviderClass {
 	
 	 @DataProvider(name="SearchProvider")
@@ -19,5 +24,5 @@ public class DataproviderClass {
 		 return data;*/
 		 
 		 return new Object[] {"Three Thousand Stitches: Ordinary People, Extraordinary Lives", "Captain Cool: The M.S. Dhoni Story - 4th Revised Edition"};
-}
+	 }
 }

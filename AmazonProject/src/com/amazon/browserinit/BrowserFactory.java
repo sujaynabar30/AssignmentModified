@@ -1,4 +1,4 @@
-package PageFactory;
+package com.amazon.browserinit;
 
 import java.util.concurrent.TimeUnit;
 
@@ -6,6 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+
+/**
+ * 
+ * @author sujay_nabar
+ * This class is used for browser initializing and setting the browser
+ */
 
 public class BrowserFactory {
 	
@@ -16,24 +22,19 @@ public class BrowserFactory {
 		if(BrowserName.equals("chrome"))
 		{
 			driver = new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
-			driver.manage().window().maximize();
-			driver.get(url);
 		}
 		else if(BrowserName.equals("firefox"))
 		{
 			driver = new FirefoxDriver();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
-			driver.manage().window().maximize();
-			driver.get(url);
 		}
 		else if(BrowserName.equals("IE"))
 		{
 			driver = new InternetExplorerDriver();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
-			driver.manage().window().maximize();
-			driver.get(url);
 		}
+	
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
+		driver.manage().window().maximize();
+		driver.get(url);
 		
 		return driver;
 		

@@ -7,6 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+/**
+ * 
+ * @author sujay_nabar
+ * This page is used for Window Handling
+ */
 
 public class WindowHandleClass {
 
@@ -35,7 +40,7 @@ public class WindowHandleClass {
 		
 		String MainWindow = driver.getWindowHandle();								//get current id of window
 		System.out.println("Mainwindow :"+MainWindow);
-		System.out.println("Title of page :"+driver.getTitle());
+		System.out.println("Title of main page :"+driver.getTitle());
 		
 		Assert.assertEquals(driver.getTitle(), "Amazon.in: Three Thousand Stitches: Ordinary People, Extraordinary Lives");
 		
@@ -49,7 +54,7 @@ public class WindowHandleClass {
 			if(!MainWindow.equalsIgnoreCase(childWindow)) {
 				
 				  driver.switchTo().window(childWindow);
-				  System.out.println("Title of page :"+driver.getTitle());
+				  System.out.println("Title of current page :"+driver.getTitle());
 				
 				  driver.findElement(By.id("add-to-cart-button")).click();					//add to cart button
 				  System.out.println("product added to cart");

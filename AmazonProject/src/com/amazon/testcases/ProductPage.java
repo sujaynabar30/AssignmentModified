@@ -7,8 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import PageFactory.BrowserFactory;
+import com.amazon.browserinit.BrowserFactory;
 
+/**
+ * 
+ * @author sujay_nabar
+ * This class is used to search the product and call the window handling class
+ */
 public class ProductPage {
 
     
@@ -24,6 +29,5 @@ public class ProductPage {
 			
 			WindowHandleClass window = new WindowHandleClass();								//go to windowhandling class
 			window.windowHandle(driver,searchKey);
- 
 	}
 }
