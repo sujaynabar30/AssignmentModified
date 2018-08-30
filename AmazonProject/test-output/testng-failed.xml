@@ -10,7 +10,7 @@
           <include name="mousehover"/>
           <include name="beforeTest"/>
           <include name="productDelete"/>
-          <include name="proudctPage"/>
+          <include name="proudctPage" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.amazon.testcases.AmazonMain -->
     </classes>

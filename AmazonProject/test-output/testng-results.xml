@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="206269" started-at="2018-08-30T12:29:52Z" finished-at="2018-08-30T12:33:18Z">
+  <suite name="Default suite" duration-ms="124535" started-at="2018-08-30T18:03:01Z" finished-at="2018-08-30T18:05:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="206269" started-at="2018-08-30T12:29:52Z" finished-at="2018-08-30T12:33:18Z">
+    <test name="Default test" duration-ms="124535" started-at="2018-08-30T18:03:01Z" finished-at="2018-08-30T18:05:06Z">
       <class name="com.amazon.testcases.AmazonMain">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="beforeTest" is-config="true" duration-ms="80314" started-at="2018-08-30T12:29:52Z" finished-at="2018-08-30T12:31:12Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.amazon.testcases.AmazonMain@724af044]" name="beforeTest" is-config="true" duration-ms="19656" started-at="2018-08-30T18:03:01Z" finished-at="2018-08-30T18:03:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="login" duration-ms="25548" started-at="2018-08-30T12:31:12Z" finished-at="2018-08-30T12:31:38Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.amazon.testcases.AmazonMain@724af044]" name="login" duration-ms="21974" started-at="2018-08-30T18:03:21Z" finished-at="2018-08-30T18:03:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="proudctPage(java.lang.String)[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="proudctPage" duration-ms="33976" started-at="2018-08-30T12:31:38Z" data-provider="SearchProvider" depends-on-methods="com.amazon.testcases.AmazonMain.login" finished-at="2018-08-30T12:32:12Z">
+        <test-method status="PASS" signature="proudctPage(java.lang.String)[pri:0, instance:com.amazon.testcases.AmazonMain@724af044]" name="proudctPage" duration-ms="21146" started-at="2018-08-30T18:03:43Z" data-provider="SearchProvider" depends-on-methods="com.amazon.testcases.AmazonMain.login" finished-at="2018-08-30T18:04:04Z">
           <params>
             <param index="0">
               <value>
@@ -26,26 +26,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proudctPage -->
-        <test-method status="PASS" signature="proudctPage(java.lang.String)[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="proudctPage" duration-ms="16656" started-at="2018-08-30T12:32:12Z" data-provider="SearchProvider" depends-on-methods="com.amazon.testcases.AmazonMain.login" finished-at="2018-08-30T12:32:28Z">
+        <test-method status="PASS" signature="proudctPage(java.lang.String)[pri:0, instance:com.amazon.testcases.AmazonMain@724af044]" name="proudctPage" duration-ms="13789" started-at="2018-08-30T18:04:04Z" data-provider="SearchProvider" depends-on-methods="com.amazon.testcases.AmazonMain.login" finished-at="2018-08-30T18:04:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Captain Cool: The M.S. Dhoni Story - 4th Revised Edition]]>
+                <![CDATA[The Dhoni Touch: Unravelling the Enigma That Is Mahendra Singh Dhoni]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proudctPage -->
-        <test-method status="PASS" signature="productDelete()[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="productDelete" duration-ms="10390" started-at="2018-08-30T12:32:28Z" depends-on-methods="com.amazon.testcases.AmazonMain.proudctPage" finished-at="2018-08-30T12:32:39Z">
+        <test-method status="PASS" signature="productDelete()[pri:0, instance:com.amazon.testcases.AmazonMain@724af044]" name="productDelete" duration-ms="9415" started-at="2018-08-30T18:04:18Z" depends-on-methods="com.amazon.testcases.AmazonMain.proudctPage" finished-at="2018-08-30T18:04:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productDelete -->
-        <test-method status="PASS" signature="mousehover()[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="mousehover" duration-ms="38576" started-at="2018-08-30T12:32:39Z" depends-on-methods="com.amazon.testcases.AmazonMain.productDelete" finished-at="2018-08-30T12:33:17Z">
+        <test-method status="PASS" signature="mousehover()[pri:0, instance:com.amazon.testcases.AmazonMain@724af044]" name="mousehover" duration-ms="37304" started-at="2018-08-30T18:04:28Z" depends-on-methods="com.amazon.testcases.AmazonMain.productDelete" finished-at="2018-08-30T18:05:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mousehover -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amazon.testcases.AmazonMain@55f3ddb1]" name="afterTest" is-config="true" duration-ms="783" started-at="2018-08-30T12:33:17Z" finished-at="2018-08-30T12:33:18Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.amazon.testcases.AmazonMain@724af044]" name="afterTest" is-config="true" duration-ms="1138" started-at="2018-08-30T18:05:05Z" finished-at="2018-08-30T18:05:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
