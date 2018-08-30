@@ -12,13 +12,12 @@ public class DataproviderClass {
          };*/  
 		 
 		/* Object[] data = new Object[];
-		 
 		// 1st row
 			data[0] ="Think and Grow Rich (Re-Jacketed December 2017)";
 			data[1] = "M S Dhoni: Captain Cool";
 		 
 		 return data;*/
 		 
-		 return new Object[] {"Think and Grow Rich (Re-Jacketed December 2017)", "Captain Cool: The M.S. Dhoni Story - 4th Revised Edition"};
+		 return new Object[] {"Three Thousand Stitches: Ordinary People, Extraordinary Lives", "Captain Cool: The M.S. Dhoni Story - 4th Revised Edition"};
 }
 }

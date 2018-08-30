@@ -19,12 +19,11 @@ public class ProductPage {
 			System.out.println("dataprovided key is :"+searchKey);
 			WebElement searchbar = driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]")); // find searchbox
 			searchbar.clear();
-			searchbar.sendKeys(searchKey);
+			searchbar.sendKeys(searchKey);														//send keys
 			driver.findElement(By.className("nav-input")).click(); // click search
-			driver.findElement(By.linkText(searchKey)).click();			//finding the product and clicking
-
-			WindowHandleClass window = new WindowHandleClass();
-			window.windowHandle(driver);
+			
+			WindowHandleClass window = new WindowHandleClass();								//go to windowhandling class
+			window.windowHandle(driver,searchKey);
  
 	}
 }
