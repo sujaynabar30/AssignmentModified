@@ -23,6 +23,6 @@ public class DataproviderClass {
 		 
 		 return data;*/
 		 
-		 return new Object[] {"Three Thousand Stitches: Ordinary People, Extraordinary Lives", "Captain Cool: The M.S. Dhoni Story - 4th Revised Edition"};
+		 return new Object[] {"Three Thousand Stitches: Ordinary People, Extraordinary Lives", "The Dhoni Touch: Unravelling the Enigma That Is Mahendra Singh Dhoni"};
 	 }
 }

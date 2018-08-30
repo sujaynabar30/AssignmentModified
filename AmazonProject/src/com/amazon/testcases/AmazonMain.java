@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import com.amazon.browserinit.BrowserFactory;
 import com.amazon.mousehover.FilteringMouseHover;
+import com.amazon.readfiles.ReadConfigfile;
 
 /**
  * 
@@ -16,19 +17,21 @@ import com.amazon.mousehover.FilteringMouseHover;
 
 public class AmazonMain extends ProductPage {
 	
-	WebDriver driver;
+	public WebDriver driver;
+	ReadConfigfile read = new ReadConfigfile();
 	
 	@BeforeTest
 	public void beforeTest()
 	{
-		 driver = BrowserFactory.startBrowser("chrome", "https://www.amazon.in/");
+		 driver = BrowserFactory.startBrowser(read.getBrowser(),read.getUrl());
 	}
-
+	
 	@Test
 	public void login()
 	{
+		
 		VerifyAmazonLogin login = new VerifyAmazonLogin(driver);
-		login.verifyValidLogin();
+		login.verifyValidLogin(read.getEmailId(),read.getPassword());
 	}
 	
 	@Test(dependsOnMethods={"login"},dataProvider = "SearchProvider", dataProviderClass = DataproviderClass.class)

@@ -34,8 +34,7 @@ public class VerifyAmazonLogin {
 		this.driver = driver;
 	}
 
-
-	public void verifyValidLogin()
+	public void verifyValidLogin(String username, String pass)
 	{
 		/*WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -53,7 +52,7 @@ public class VerifyAmazonLogin {
 
 		//WebDriver driver = BrowserFactory.startBrowser("chrome", "https://www.amazon.in/");   //this will launch the browser and specific url
 		
-		File file = new File("D:\\Git Repository\\AmazonProject\\Configs\\Configuation.properties");
+		/*File file = new File("C:\\Users\\Sujay\\git\\AssignmentModified\\AmazonProject\\Configs\\Configuation.properties");
 
 		FileInputStream fileInput = null;
 		try {
@@ -69,11 +68,11 @@ public class VerifyAmazonLogin {
 			prop.load(fileInput);
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		}*/
 		
 		LoginPage login_page = PageFactory.initElements(driver, LoginPage.class);        //created page object using page factory
 		
-		login_page.loginToAmazon(prop.getProperty("emailid"),prop.getProperty("password"));				//call the method
+		login_page.loginToAmazon(username,pass);				//call the method
 		
 		WebElement verify = driver.findElement(By.xpath("//*[@id=\"nav-link-yourAccount\"]/span[1]"));
 		String check = verify.getText();
